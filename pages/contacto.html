@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctate Con Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="my_header">
+        <div class="header">
+            <div class="logo"><img src="../images/logo_sat.png" id="img_logo" alt="Logo"></div>
+            <div class="titulo_h1"><h1 class="h1">ADRIÁN TABERNA</h1><h2 class="h2">Productor Asesor de Seguros</h2></div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link navbar-brand" href="../index.html">Ir Al Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link navbar-brand" aria-current="page" href="./nosotros.html">¿Quiénes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link navbar-brand" aria-current="page" href="./aseguradoras.html">Empresas Que Nos Acompañan</a>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Menú Desplegable
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="navbar-brand" href="./servicios.html">Nuestros Servicios</a></li>
+                        <li><a class="navbar-brand" href="./porque.html">¿Por Qué Elegirnos?</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="navbar-brand" href="./ubicacion.html">Nuestra Ubicación</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <button class="btn btn-outline-success" type="submit"><a href="./cotizacion.html" class="cotiz">Solicita Tu Cotización Aquí</a></button>
+                </form>
+        </div>
+    </nav>
+    <main>
+        <h3 class="h3_form">
+            Ante cualquier consulta contáctate con nosotros completando el siguiente formulario:
+          </h3>
+          <div class="form">
+            <form
+              action="../php/guardar.php"
+              method="post"
+              class="formulario_contacto centro"
+            >
+              <label for="nombre_apellido">Nombre y Apellido: </label>
+              <input
+                type="text"
+                name="nombre_apellido"
+                id="nombre_apellido"
+                placeholder="Nombre y Apellido"
+                maxlength="30"
+              />
+              <label for="fecha_nac">Fecha de Nacimiento: </label>
+              <input
+                type="text"
+                name="fecha_nac"
+                id="fecha_nac"
+                placeholder="Fecha de Nacimiento (DD/MM/AAAA)"
+                maxlength="10"
+              />
+              <label for="domicilio">Domicilio: </label>
+              <input
+                type="text"
+                name="domicilio"
+                id="domicilio"
+                placeholder="Domicilio"
+                maxlength="30"
+              />
+              <label for="localidad">Localidad: </label>
+              <input
+                type="text"
+                name="localidad"
+                id="localidad"
+                placeholder="Localidad"
+                maxlength="30"
+              />
+              <div class="selec">
+                <label class="visible" for="selec_prov"
+                  >Selecciona tu Provincia:
+                </label>
+                <select name="selec_prov" id="selec_prov">
+                  <option value="selec_prov">Indica tu Provincia</option>
+                  <option value="bs_as">Buenos Aires</option>
+                  <option value="caba">CABA</option>
+                  <option value="catamarca">Catamarca</option>
+                  <option value="chaco">Chaco</option>
+                  <option value="chubut">Chubut</option>
+                  <option value="cordoba">Córdoba</option>
+                  <option value="corrientes">Corrientes</option>
+                  <option value="entreRios">Entre Ríos</option>
+                  <option value="formosa">Formosa</option>
+                  <option value="jujuy">Jujuy</option>
+                  <option value="laPampa">La Pampa</option>
+                  <option value="laRioja">La Rioja</option>
+                  <option value="mendoza">Mendoza</option>
+                  <option value="misiones">Misiones</option>
+                  <option value="neuquen">Neuquén</option>
+                  <option value="rioNegro">Río Negro</option>
+                  <option value="salta">Salta</option>
+                  <option value="sanJuan">San Juan</option>
+                  <option value="sanLuis">San Luis</option>
+                  <option value="santaCruz">Santa Cruz</option>
+                  <option value="santaFe">Santa Fe</option>
+                  <option value="santiagoDelEstero">Santiago del Estero</option>
+                  <option value="tierraDelFuego">Tierra del Fuego</option>
+                  <option value="tucuman">Tucumán</option>
+                </select>
+              </div>
+              <label for="cod_postal">Código Postal: </label>
+              <input
+                type="text"
+                name="cod_postal"
+                id="cod_postal"
+                placeholder="Código Postal"
+                maxlength="8"
+              />
+              <label for="tel">Teléfono: </label>
+              <input
+                type="text"
+                name="tel"
+                id="tel"
+                placeholder="Ej: 1126568965"
+                maxlength="10"
+              />
+              <label for="email">Email: </label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="nombre@email.com"
+                maxlength="40"
+              />
+              <textarea
+                placeholder="Escríbenos tu consulta o comentario:"
+                name="cons_o_comen"
+                id="cons_o_comen"
+                cols="40"
+                rows="10"
+              ></textarea>
+              <input type="submit" class="submit_cont" value="Enviar" />
+              <input type="reset" class="reset_cont" value="Restablecer" />
+            </form>
+          </div>
+    </main>
+    <footer class="footer_gral">
+    <div class="footer_elem">
+        <div class="derechos">
+        <h6>&copy;Todos los derechos reservados</h6>
+        </div>
+        <div class="datos_footer">
+        <h6>Adrián Salvador Taberna – Productor Asesor de Seguros – MSSN: 78427</h6>
+        <h6>Domicilio Fiscal: Av. Ángel T de Alvear 2553</h6>
+        <h6>1611 Don Torcuato Norte (TIGRE) – Buenos Aires – Argentina</h6>
+        <h6>CUIT: 20281130014</h6>
+        </div>
+        <div class="redes_sociales">
+        <a
+            href="https://w.app/mXp0Dl" target="_blank"
+            ><img class="red_soc" src="../images/whatsapp.png" alt="WhatsApp"
+        /></a>
+        <a href="https://www.facebook.com/profile.php?id=61559546476614" target="_blank"
+            ><i class="fab fa-facebook"
+            ><img class="red_soc" src="../images/facebook.png" alt="Facebook" /></i
+        ></a>
+        <a
+            href="https://msng.link/o?seguros.adriantaberna=ig"
+            target="_blank"
+            ><i class="fab fa-instagram"
+            ><img
+                class="red_soc"
+                src="../images/instagram.png"
+                alt="Instagram" /></i
+        ></a>
+        <a
+            href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/in/adrian-taberna-499457a7?lipi=urn%253Ali%253Apage%253Ad_flagship3_profile_view_base_contact_details%253BJW2T2mUKT02cVNAhA%252Bs2hA%253D%253D"
+            target="_blank"
+            ><i class="fab fa-linkedin"
+            ><img class="red_soc" src="../images/linkedIn.png" alt="LinkedIn" /></i
+        ></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Styles for screens smaller than 320px */
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Styles for screens between 768px and 1024px */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for screens between 768px and 1024px */
+}
+
+@media (min-width: 1024px) {
+    /* Styles for screens larger than 1024px */
+}
+/*! Estilos para el Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para el Header */
+.header {
+    background-color: #28b7f0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    padding: 1em;
+    filter: drop-shadow(0.25em 0.25em 1.5em #251b1b);
+}
+
+#img_logo {
+    border-radius: 50%;
+    border: solid 1ex #ffffff;
+    width: 10em;
+}
+
+.h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 10ex;
+}
+
+.titulo_h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7ex;
+}
+
+/* Estilos para el Navbar */
+.navbar, .dropdown-menu {
+    background-color: #c1cef3;
+    z-index: 1000;
+}
+
+.navbar-expand-lg {
+    filter: drop-shadow(0.15rem 0.5rem #4b4b9c);
+    position: sticky;
+    top: 0;
+}
+
+.collapse a {
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+    color: #332b2b;
+}
+
+a:hover {
+    background-color: #e4b1b1;
+}
+
+.navbar-toggler {
+    color: #292222;
+}
+
+.btn {
+    background-color: #7e7edd;
+}
+
+.navbar-brand {
+    padding-left: 1ex;
+}
+
+.cotiz {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f8f1f1;
+}
+
+/* Estilos para el Main */
+.h3Web {
+    margin-top: 1ex;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 6ex;
+}
+
+.my_carousel {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.parr_carousel {
+    background-color: #1b0a0a;
+    color: #f2f4f5;
+    font-size: 3ex;
+}
+
+.elem3_1, .elem6_1 {
+    color: #296e2d;
+}
+
+.h5_carousel {
+    font-size: 5ex;
+    font-weight: 800;
+}
+
+/* ? Estilos de los H3 */
+.h3_nosotros, .h3_servicios, .h3_eleccion, .h3_form, .h3_aseguradoras, .h3_ubicacion, .h3_cotizacion {
+    margin: 1.5rem 0;
+    font-size: 2rem;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #304930;
+    text-decoration: underline;
+}
+
+/* ? Estilos para Nosotros, Servicios, Eleccion */
+.nosotros, .servicios, .eleccion {
+    margin: 0 1rem;
+}
+
+.h4_nosotros, .h4_serv, .h4_elec {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: dashed;
+    color: #251b1b;
+}
+
+.parrafo1_nos, .parrafo1_serv, .parrafo1_elec {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: #251b1b;
+}
+
+.parrafo_nos, .lista_serv, .lista_nos, .parrafo_serv, .parrafo_elec {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #251b1b;
+}
+
+.h5_anexos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: dashed;
+    color: #251b1b;
+}
+
+.negrita_list {
+    font-weight: 800;
+}
+
+.parr_fin_elec {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #0a0101;
+    font-weight: 800;
+}
+
+/* Estilos para el Carrousel de las Aseguradoras */
+.carrusel_aseg {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 15ex 1ex;
+}
+
+.carrusel {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrusel-images {
+    display: flex;
+    width: 25%;
+    animation: scroll 26s linear infinite;
+}
+
+.carrusel-images img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% * 7)); /* Ajusta este valor según el número de imágenes */
+    }
+}
+
+/* Estilos de la Ubicación */
+.mapouter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+/* Estilos para el Formulario */
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form,
+.articulos_index,
+.carousel_index {
+    margin-top: 2rem;
+}
+
+.formulario_contacto {
+    border: 0.5ex #682e2e solid;
+    background-color: #cbf4f7; 
+    font-family: Arial, sans-serif;
+    font-size: 2ex;
+    border-radius: 2ex;
+    margin-top: 3ex;
+    padding: 2ex;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+input,
+.selec, #cons_o_comen {
+    width: 50%;
+    border: none;
+    outline: none;
+    box-shadow: 0.2ex 0.2ex 0.5ex #000000;
+}
+
+.selec {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 0.6ex;
+    padding: 0.5ex;
+}
+
+.visible {
+    visibility: visible;
+}
+
+label {
+    visibility: hidden;
+}
+
+#nombre_apellido,
+#fecha_nac,
+#domicilio,
+#localidad,
+#selec_prov,
+#cod_postal,
+#tel,
+#email {
+    border-radius: 0.6ex;
+    padding: 0.5ex;
+}
+
+#cons_o_comen {
+    width: 100%;
+    border-radius: 1ex;
+    padding: 0.5ex 0.5ex;
+}
+
+.boton_form {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    margin-top: 3ex;
+}
+
+.reset {
+    margin-left: 0.25ex;
+    margin-bottom: 2ex;
+}
+
+.submit_cont,
+.reset_cont {
+    width: 15ex;
+    margin-top: 3ex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3ex;
+    background: #c9d9b1;
+    border-radius: 0.6ex;
+}
+
+/* !Estilos para el formulario de Cotización */
+.form {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.centro {
+    width: 70%;
+    max-width: 40em;
+}
+
+.formulario_cotizacion {
+    border: 0.5ex #dac8f1 solid;
+    background-color: #e0f7cb;
+    font-family: Arial, sans-serif;
+    font-size: 2ex;
+    border-radius: 2ex;
+    margin: 2ex auto;
+    padding: 2ex;
+    max-width: 60em;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+input,
+.selec {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    outline: none;
+    box-shadow: 0.2ex 0.2ex 0.5ex #000000;
+}
+
+.selec {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 0.6ex;
+    padding: 0.5ex;
+}
+
+label {
+    visibility: hidden;
+}
+
+#nombre_apellido,
+#marca,
+#model,
+#year,
+#domicilio,
+#localidad,
+#tel,
+#email {
+    border-radius: 0.6ex;
+    padding: 0.5ex;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.boton_form {
+    display: flex;
+    justify-content: center;
+}
+
+.reset {
+    margin-left: 0.25ex;
+    margin-bottom: 2ex;
+}
+
+.submit,
+.reset {
+    color: #fcecec;
+    width: 15ex;
+    margin-top: 3ex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3ex;
+    background: #4f24eb;
+    border-radius: 0.6ex;
+}
+
+/*Footer*/
+.footer_gral {
+    margin-top: auto;
+    padding-top: 5ex;
+}
+
+.footer_elem {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2ex;
+    color: #c0dfd4;
+    width: 100%;
+    background: #1b0a0a;
+}
+
+.datos_footer {
+    text-align: center;
+    color: #d6ddb4;
+}
+
+.red_soc {
+    width: 5ex;
+    border-radius: 25%;
+}
